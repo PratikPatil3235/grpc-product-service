@@ -20,14 +20,6 @@
     "test:e2e": "jest --config ./apps/api-gateway/test/jest-e2e.json",
     "generate-proto-types":"npx protoc --ts_proto_out=./libs/src/types/ ./proto/*.proto --ts_proto_opt=nestJs=true"
   },
-  "npm":{
-    "targets":{
-      "generate-proto-types":{
-        "cashe":true,
-        "inputs":["{workspaceRoot}/*.proto"]
-      }
-    }
-  },
   "dependencies": {
     "@grpc/grpc-js": "^1.13.4",
     "@grpc/proto-loader": "^0.7.15",
